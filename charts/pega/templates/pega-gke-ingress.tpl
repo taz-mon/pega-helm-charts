@@ -5,7 +5,6 @@ apiVersion: extensions/v1beta1
 metadata:
   name: {{ .name }}
   namespace: {{ .root.Release.Namespace }}
-  annotations:
 spec:
   backend:
     serviceName: {{ .name }}
